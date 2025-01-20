@@ -58,12 +58,18 @@ import re
 
 # result = re.search(r"\d+","this is my number: 123-234-123-123")
 # print(result)
-def rearrange_name(name):
-  result = re.search(r"^(\w*) (\w.*)$", name)
-  if result is None:
-    return name
-  return "{} {}".format(result[2], result[1])
-name=rearrange_name("Nguyen Ngoc Hai")
-full_name = rearrange_name("Lucas Daniel")
-print(name)
-print(full_name)
+# def rearrange_name(name):
+#   result = re.search(r"^(\w*) (\w.*)$", name)
+#   if result is None:
+#     return name
+#   return "{} {}".format(result[2], result[1])
+# name=rearrange_name("Nguyen Ngoc Hai")
+# full_name = rearrange_name("Lucas Daniel")
+# print(name)
+# print(full_name)
+
+text = "this is eeeeeeee"
+result = re.search(r"[a-e]",text)
+
+
+print(result)
