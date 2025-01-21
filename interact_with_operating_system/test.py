@@ -68,8 +68,5 @@ import re
 # print(name)
 # print(full_name)
 
-text = "this is eeeeeeee"
-result = re.search(r"[a-e]",text)
-
-
+result = re.split(r"the|a", "One sentence. Another one? And the last one!")
 print(result)
